@@ -22,7 +22,6 @@ menu "Pre Encrypted OTA Configuration"
 
         config PRE_ENCRYPTED_OTA_USE_ECIES
             depends on SOC_HMAC_SUPPORTED
-            select MBEDTLS_HKDF_C
             bool "ECIES encryption"
             help
                 Use Elliptic Curve Cryptography (ECC) for key agreement.
